@@ -1,0 +1,207 @@
+
+<!-- File: public/xa-hoi.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xã hội - Buổi sáng 6h</title>
+    <meta name="description" content="Tin tức xã hội, cộng đồng, môi trường và những vấn đề trong cuộc sống hằng ngày.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dau trang -->
+    <header class="dau-trang">
+        <div class="khung-chua dau-trang-noi-dung">
+            <a class="logo" href="index.html" aria-label="Buổi sáng 6h - Trang chủ">
+                <span class="logo-bieu-tuong">6h</span>
+                <span class="logo-ten">
+                    <span class="logo-ten-chinh">Buổi sáng 6h</span>
+                    <span class="logo-ten-phu">Tin mới mỗi ngày</span>
+                </span>
+            </a>
+
+            <form class="thanh-tim-kiem" action="search.html" method="get">
+                <label class="an-van-ban" for="tu-khoa">Tìm kiếm tin tức</label>
+                <input id="tu-khoa" type="search" name="q"
+                       placeholder="Tìm kiếm tin tức..." required>
+                <button class="nut-tim-kiem" type="submit">Tìm kiếm</button>
+            </form>
+
+            <details class="menu-dien-thoai">
+                <summary>
+                    <span class="menu-bieu-tuong">☰</span>
+                    <span>Danh mục</span>
+                </summary>
+                <nav class="danh-sach-menu-dien-thoai" aria-label="Menu điện thoại">
+                    <a href="index.html">Trang chủ</a>
+                    <a href="xa-hoi.html">Xã hội</a>
+                    <a href="category.html?category=doi-song">Đời sống</a>
+                    <a href="category.html?category=giao-duc">Giáo dục</a>
+                    <a href="giai-tri.html">Giải trí</a>
+                    <a href="category.html?category=the-thao">Thể thao</a>
+                    <a href="category.html?category=nghe-thuat">Nghệ thuật</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <!-- Menu chuyen muc tren may tinh -->
+    <nav class="thanh-chuyen-muc" aria-label="Chuyên mục">
+        <div class="khung-chua danh-sach-chuyen-muc">
+            <a class="muc-menu" href="index.html">Trang chủ</a>
+            <a class="muc-menu muc-menu-dang-chon" href="xa-hoi.html">Xã hội</a>
+            <a class="muc-menu" href="category.html?category=doi-song">Đời sống</a>
+            <a class="muc-menu" href="category.html?category=giao-duc">Giáo dục</a>
+            <a class="muc-menu" href="giai-tri.html">Giải trí</a>
+            <a class="muc-menu" href="category.html?category=the-thao">Thể thao</a>
+            <a class="muc-menu" href="category.html?category=nghe-thuat">Nghệ thuật</a>
+        </div>
+    </nav>
+
+    <!-- Noi dung chinh -->
+    <main class="khung-chua noi-dung-chinh">
+        <section class="khu-vuc-tin-moi">
+            <div class="tieu-de-khu-vuc">
+                <div>
+                    <p class="nhan-khu-vuc">GÓC NHÌN CUỘC SỐNG</p>
+                    <h1>Tin tức Xã hội</h1>
+                    <p class="mo-ta-khu-vuc">
+                        Những câu chuyện về cộng đồng và các vấn đề gần gũi mỗi ngày.
+                    </p>
+                </div>
+            </div>
+
+            <div class="luoi-danh-sach-tin">
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=11">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Cong+dong"
+                             alt="Ảnh minh họa hoạt động cộng đồng">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Cộng đồng</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=11">Những hành động nhỏ góp phần xây dựng cộng đồng văn minh</a>
+                        </h2>
+                        <p class="ngay-dang">09/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Tôn trọng không gian chung, giữ gìn vệ sinh và giúp đỡ người khác là những việc ai cũng có thể bắt đầu.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=12">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Moi+truong"
+                             alt="Ảnh minh họa bảo vệ môi trường">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Môi trường</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=12">Sống xanh bắt đầu từ những thói quen hằng ngày</a>
+                        </h2>
+                        <p class="ngay-dang">09/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Hạn chế đồ dùng một lần và phân loại rác là những cách đơn giản để quan tâm hơn đến môi trường.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=13">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Giao+thong"
+                             alt="Ảnh minh họa giao thông">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Giao thông</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=13">Văn hóa giao thông bắt đầu từ ý thức của mỗi người</a>
+                        </h2>
+                        <p class="ngay-dang">08/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Tuân thủ quy định, nhường đường và chú ý an toàn giúp việc đi lại trở nên văn minh hơn.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=14">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Cong+nghe"
+                             alt="Ảnh minh họa công nghệ trong đời sống">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Công nghệ</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=14">Sử dụng mạng xã hội có trách nhiệm trong đời sống số</a>
+                        </h2>
+                        <p class="ngay-dang">08/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Kiểm chứng thông tin và tôn trọng quyền riêng tư góp phần xây dựng môi trường trực tuyến tích cực.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=15">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Tinh+nguyen"
+                             alt="Ảnh minh họa hoạt động tình nguyện">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Thiện nguyện</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=15">Hoạt động tình nguyện kết nối những tấm lòng sẻ chia</a>
+                        </h2>
+                        <p class="ngay-dang">07/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Mỗi người có thể đóng góp thời gian, kỹ năng hoặc công sức để hỗ trợ những hoàn cảnh cần giúp đỡ.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=16">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Khong+gian+cong+cong"
+                             alt="Ảnh minh họa không gian công cộng">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Đô thị</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=16">Không gian công cộng thân thiện giúp gắn kết người dân</a>
+                        </h2>
+                        <p class="ngay-dang">06/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Công viên và các khu sinh hoạt chung tạo điều kiện để mọi người nghỉ ngơi, vận động và giao lưu.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="khu-vuc-xem-them">
+                <a class="nut-xem-them" href="index.html">Về trang chủ</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chan trang -->
+    <footer class="chan-trang">
+        <div class="khung-chua chan-trang-noi-dung">
+            <div class="chan-trang-gioi-thieu">
+                <a class="chan-trang-logo" href="index.html">Buổi sáng 6h</a>
+                <p>
+                    Cập nhật những câu chuyện đời sống và xã hội,
+                    mang đến góc nhìn gần gũi về thế giới quanh ta.
+                </p>
+            </div>
+            <div class="chan-trang-ban-quyen">
+                <p>© 2026 Buổi sáng 6h. Nội dung phục vụ mục đích học tập.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

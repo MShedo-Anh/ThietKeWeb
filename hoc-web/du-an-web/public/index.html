@@ -1,0 +1,207 @@
+
+<!-- File: public/index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi sáng 6h - Tin mới mỗi ngày</title>
+    <meta name="description" content="Cập nhật tin tức xã hội, đời sống, giáo dục, giải trí, thể thao và nghệ thuật.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dau trang -->
+    <header class="dau-trang">
+        <div class="khung-chua dau-trang-noi-dung">
+            <a class="logo" href="index.html" aria-label="Buổi sáng 6h - Trang chủ">
+                <span class="logo-bieu-tuong">6h</span>
+                <span class="logo-ten">
+                    <span class="logo-ten-chinh">Buổi sáng 6h</span>
+                    <span class="logo-ten-phu">Tin mới mỗi ngày</span>
+                </span>
+            </a>
+
+            <form class="thanh-tim-kiem" action="search.html" method="get">
+                <label class="an-van-ban" for="tu-khoa">Tìm kiếm tin tức</label>
+                <input id="tu-khoa" type="search" name="q"
+                       placeholder="Tìm kiếm tin tức..." required>
+                <button class="nut-tim-kiem" type="submit">Tìm kiếm</button>
+            </form>
+
+            <details class="menu-dien-thoai">
+                <summary>
+                    <span class="menu-bieu-tuong">☰</span>
+                    <span>Danh mục</span>
+                </summary>
+                <nav class="danh-sach-menu-dien-thoai" aria-label="Menu điện thoại">
+                    <a href="index.html">Trang chủ</a>
+                    <a href="xa-hoi.html">Xã hội</a>
+                    <a href="category.html?category=doi-song">Đời sống</a>
+                    <a href="category.html?category=giao-duc">Giáo dục</a>
+                    <a href="giai-tri.html">Giải trí</a>
+                    <a href="category.html?category=the-thao">Thể thao</a>
+                    <a href="category.html?category=nghe-thuat">Nghệ thuật</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <!-- Menu chuyen muc tren may tinh -->
+    <nav class="thanh-chuyen-muc" aria-label="Chuyên mục">
+        <div class="khung-chua danh-sach-chuyen-muc">
+            <a class="muc-menu muc-menu-dang-chon" href="index.html">Trang chủ</a>
+            <a class="muc-menu" href="xa-hoi.html">Xã hội</a>
+            <a class="muc-menu" href="category.html?category=doi-song">Đời sống</a>
+            <a class="muc-menu" href="category.html?category=giao-duc">Giáo dục</a>
+            <a class="muc-menu" href="giai-tri.html">Giải trí</a>
+            <a class="muc-menu" href="category.html?category=the-thao">Thể thao</a>
+            <a class="muc-menu" href="category.html?category=nghe-thuat">Nghệ thuật</a>
+        </div>
+    </nav>
+
+    <!-- Noi dung chinh -->
+    <main class="khung-chua noi-dung-chinh">
+        <section class="khu-vuc-tin-moi">
+            <div class="tieu-de-khu-vuc">
+                <div>
+                    <p class="nhan-khu-vuc">CẬP NHẬT MỖI NGÀY</p>
+                    <h1>Tin tức mới nhất</h1>
+                    <p class="mo-ta-khu-vuc">
+                        Những câu chuyện đáng chú ý trong cuộc sống quanh ta.
+                    </p>
+                </div>
+            </div>
+
+            <div class="luoi-danh-sach-tin">
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=1">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Xa+hoi"
+                             alt="Ảnh minh họa tin tức xã hội">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <a class="nhan-chuyen-muc" href="xa-hoi.html">Xã hội</a>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=1">Những thay đổi nhỏ góp phần xây dựng cộng đồng văn minh</a>
+                        </h2>
+                        <p class="ngay-dang">09/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Từ những hành động thường ngày, mỗi người đều có thể góp phần tạo nên môi trường sống tích cực hơn.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=2">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Giai+tri"
+                             alt="Ảnh minh họa tin tức giải trí">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <a class="nhan-chuyen-muc" href="giai-tri.html">Giải trí</a>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=2">Xu hướng giải trí lành mạnh được giới trẻ quan tâm</a>
+                        </h2>
+                        <p class="ngay-dang">09/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Âm nhạc, phim ảnh và các hoạt động sáng tạo mang đến nhiều lựa chọn thư giãn sau giờ học, giờ làm.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=3">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Doi+song"
+                             alt="Ảnh minh họa đời sống">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <a class="nhan-chuyen-muc" href="category.html?category=doi-song">Đời sống</a>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=3">Cân bằng thời gian học tập, làm việc và nghỉ ngơi</a>
+                        </h2>
+                        <p class="ngay-dang">08/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Một lịch trình phù hợp giúp mỗi người chủ động hơn trong sinh hoạt và chăm sóc bản thân.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=4">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Giao+duc"
+                             alt="Ảnh minh họa giáo dục">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <a class="nhan-chuyen-muc" href="category.html?category=giao-duc">Giáo dục</a>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=4">Tận dụng công nghệ để nâng cao hiệu quả học tập</a>
+                        </h2>
+                        <p class="ngay-dang">08/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Các công cụ số có thể hỗ trợ tìm kiếm tài liệu, ôn tập và xây dựng thói quen học tập chủ động.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=5">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=The+thao"
+                             alt="Ảnh minh họa thể thao">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <a class="nhan-chuyen-muc" href="category.html?category=the-thao">Thể thao</a>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=5">Duy trì vận động mỗi ngày với những hoạt động đơn giản</a>
+                        </h2>
+                        <p class="ngay-dang">07/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Đi bộ, đạp xe và chơi thể thao cùng bạn bè là những cách dễ bắt đầu để tăng cường vận động.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=6">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Nghe+thuat"
+                             alt="Ảnh minh họa nghệ thuật">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <a class="nhan-chuyen-muc" href="category.html?category=nghe-thuat">Nghệ thuật</a>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=6">Không gian sáng tạo giúp nghệ thuật đến gần công chúng</a>
+                        </h2>
+                        <p class="ngay-dang">07/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Những hoạt động triển lãm và trải nghiệm nghệ thuật mở ra cơ hội khám phá góc nhìn mới.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="khu-vuc-xem-them">
+                <a class="nut-xem-them" href="category.html">Xem thêm tin tức</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chan trang -->
+    <footer class="chan-trang">
+        <div class="khung-chua chan-trang-noi-dung">
+            <div class="chan-trang-gioi-thieu">
+                <a class="chan-trang-logo" href="index.html">Buổi sáng 6h</a>
+                <p>
+                    Cập nhật những câu chuyện đời sống và xã hội,
+                    mang đến góc nhìn gần gũi về thế giới quanh ta.
+                </p>
+            </div>
+            <div class="chan-trang-ban-quyen">
+                <p>© 2026 Buổi sáng 6h. Nội dung phục vụ mục đích học tập.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

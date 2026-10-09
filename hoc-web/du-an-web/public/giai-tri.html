@@ -1,0 +1,207 @@
+
+<!-- File: public/giai-tri.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải trí - Buổi sáng 6h</title>
+    <meta name="description" content="Cập nhật tin tức âm nhạc, phim ảnh, người nổi tiếng và xu hướng giải trí.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Dau trang -->
+    <header class="dau-trang">
+        <div class="khung-chua dau-trang-noi-dung">
+            <a class="logo" href="index.html" aria-label="Buổi sáng 6h - Trang chủ">
+                <span class="logo-bieu-tuong">6h</span>
+                <span class="logo-ten">
+                    <span class="logo-ten-chinh">Buổi sáng 6h</span>
+                    <span class="logo-ten-phu">Tin mới mỗi ngày</span>
+                </span>
+            </a>
+
+            <form class="thanh-tim-kiem" action="search.html" method="get">
+                <label class="an-van-ban" for="tu-khoa">Tìm kiếm tin tức</label>
+                <input id="tu-khoa" type="search" name="q"
+                       placeholder="Tìm kiếm tin tức..." required>
+                <button class="nut-tim-kiem" type="submit">Tìm kiếm</button>
+            </form>
+
+            <details class="menu-dien-thoai">
+                <summary>
+                    <span class="menu-bieu-tuong">☰</span>
+                    <span>Danh mục</span>
+                </summary>
+                <nav class="danh-sach-menu-dien-thoai" aria-label="Menu điện thoại">
+                    <a href="index.html">Trang chủ</a>
+                    <a href="xa-hoi.html">Xã hội</a>
+                    <a href="category.html?category=doi-song">Đời sống</a>
+                    <a href="category.html?category=giao-duc">Giáo dục</a>
+                    <a href="giai-tri.html">Giải trí</a>
+                    <a href="category.html?category=the-thao">Thể thao</a>
+                    <a href="category.html?category=nghe-thuat">Nghệ thuật</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <!-- Menu chuyen muc tren may tinh -->
+    <nav class="thanh-chuyen-muc" aria-label="Chuyên mục">
+        <div class="khung-chua danh-sach-chuyen-muc">
+            <a class="muc-menu" href="index.html">Trang chủ</a>
+            <a class="muc-menu" href="xa-hoi.html">Xã hội</a>
+            <a class="muc-menu" href="category.html?category=doi-song">Đời sống</a>
+            <a class="muc-menu" href="category.html?category=giao-duc">Giáo dục</a>
+            <a class="muc-menu muc-menu-dang-chon" href="giai-tri.html">Giải trí</a>
+            <a class="muc-menu" href="category.html?category=the-thao">Thể thao</a>
+            <a class="muc-menu" href="category.html?category=nghe-thuat">Nghệ thuật</a>
+        </div>
+    </nav>
+
+    <!-- Noi dung chinh -->
+    <main class="khung-chua noi-dung-chinh">
+        <section class="khu-vuc-tin-moi">
+            <div class="tieu-de-khu-vuc">
+                <div>
+                    <p class="nhan-khu-vuc">KHÁM PHÁ VÀ THƯ GIÃN</p>
+                    <h1>Tin tức Giải trí</h1>
+                    <p class="mo-ta-khu-vuc">
+                        Âm nhạc, phim ảnh và những xu hướng giải trí được quan tâm.
+                    </p>
+                </div>
+            </div>
+
+            <div class="luoi-danh-sach-tin">
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=21">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Am+nhac"
+                             alt="Ảnh minh họa âm nhạc">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Âm nhạc</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=21">Âm nhạc trở thành lựa chọn thư giãn quen thuộc của giới trẻ</a>
+                        </h2>
+                        <p class="ngay-dang">09/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Những danh sách nhạc theo tâm trạng giúp nhiều người tìm thấy khoảng nghỉ sau ngày học tập và làm việc.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=22">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Phim+anh"
+                             alt="Ảnh minh họa phim ảnh">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Phim ảnh</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=22">Phim ảnh mở ra những góc nhìn mới về cuộc sống</a>
+                        </h2>
+                        <p class="ngay-dang">08/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Những câu chuyện gần gũi và cách kể sáng tạo khiến phim ảnh trở thành chủ đề trò chuyện phổ biến.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=23">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Noi+dung+so"
+                             alt="Ảnh minh họa nội dung số">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Nội dung số</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=23">Sáng tạo nội dung số: kể chuyện theo cách của riêng mình</a>
+                        </h2>
+                        <p class="ngay-dang">08/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Video ngắn, podcast và hình ảnh đang mở ra nhiều cách thể hiện ý tưởng cá nhân.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=24">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Le+hoi"
+                             alt="Ảnh minh họa lễ hội">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Sự kiện</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=24">Các sự kiện văn hóa tạo cơ hội kết nối cộng đồng</a>
+                        </h2>
+                        <p class="ngay-dang">07/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Những buổi biểu diễn và hoạt động giao lưu đem đến trải nghiệm giải trí trực tiếp thú vị.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=25">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Doc+sach"
+                             alt="Ảnh minh họa đọc sách">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Sở thích</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=25">Đọc sách và những thú vui giúp cân bằng thời gian rảnh</a>
+                        </h2>
+                        <p class="ngay-dang">06/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Bên cạnh các nội dung trực tuyến, nhiều hoạt động truyền thống vẫn mang đến niềm vui riêng.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="the-tin">
+                    <a class="lien-ket-anh" href="detail.html?id=26">
+                        <img class="anh-bai-viet"
+                             src="https://placehold.co/400x300?text=Xu+huong"
+                             alt="Ảnh minh họa xu hướng giải trí">
+                    </a>
+                    <div class="noi-dung-the-tin">
+                        <span class="nhan-chuyen-muc">Xu hướng</span>
+                        <h2 class="tieu-de-bai-viet">
+                            <a href="detail.html?id=26">Lựa chọn nội dung giải trí tích cực trên môi trường số</a>
+                        </h2>
+                        <p class="ngay-dang">05/10/2026</p>
+                        <p class="mo-ta-bai-viet">
+                            Chủ động chọn lọc nội dung giúp thời gian trực tuyến trở nên hữu ích và phù hợp hơn.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="khu-vuc-xem-them">
+                <a class="nut-xem-them" href="index.html">Về trang chủ</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chan trang -->
+    <footer class="chan-trang">
+        <div class="khung-chua chan-trang-noi-dung">
+            <div class="chan-trang-gioi-thieu">
+                <a class="chan-trang-logo" href="index.html">Buổi sáng 6h</a>
+                <p>
+                    Cập nhật những câu chuyện đời sống và xã hội,
+                    mang đến góc nhìn gần gũi về thế giới quanh ta.
+                </p>
+            </div>
+            <div class="chan-trang-ban-quyen">
+                <p>© 2026 Buổi sáng 6h. Nội dung phục vụ mục đích học tập.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
